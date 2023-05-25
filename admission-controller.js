@@ -1,5 +1,5 @@
 const express = require('express');
-const https = require('https');
+const http = require('http');
 const fs = require('fs');
 const k8s = require('@kubernetes/client-node');
 
@@ -53,7 +53,7 @@ app.get('/health', (req, res) => {
 });
 
 // Start the server
-https.createServer(app).listen(port, () => {
+http.createServer(app).listen(port, () => {
   console.log(`Admission controller listening on port ${port}`);
 });
 
