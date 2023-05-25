@@ -53,7 +53,7 @@ app.get('/health', (req, res) => {
 });
 
 // Start the server
-https.createServer(tlsOptions, app).listen(port, () => {
+https.createServer(app).listen(port, () => {
   console.log(`Admission controller listening on port ${port}`);
 });
 
