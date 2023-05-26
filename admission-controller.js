@@ -33,6 +33,28 @@ app.post('/mutate', async (req, res) => {
     pod.metadata.labels['custom-label'] = 'sample-value';
   }
 
+  //label base 64
+  /*[{"op": "add","path": "/metadata/labels/datadog","value": "krishna123" }  ]*/
+  /*"W3sib3AiOiAiYWRkIiwicGF0aCI6ICIvbWV0YWRhdGEvbGFiZWxzL2RhdGFkb2ciLCJ2YWx1ZSI6ICJrcmlzaG5hMTIzIiB9ICBd"*/
+
+  // add secrets base 64
+
+/*  {
+    "op": "add",
+      "path": "/spec/template/spec/containers/0/envFrom/-",
+      "secretRef": {
+    "name": "sample-pod-dev"
+  }
+  }
+
+  eyJvcCI6ICJhZGQiLCJwYXRoIjogIi9zcGVjL3RlbXBsYXRlL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20vLSIsInNlY3JldFJlZiI6IHsgIm5hbWUiOiAic2FtcGxlLXBvZC1kZXYiIH0gfQ==
+  */
+
+
+
+
+
+
   const admissionResponse = {
     apiVersion: admissionReviewVersion,
     kind: 'AdmissionReview',
@@ -40,7 +62,7 @@ app.post('/mutate', async (req, res) => {
       uid: admissionReview.request.uid,
       allowed: true,
       patchType: 'JSONPatch',
-      patch: "W3sib3AiOiAiYWRkIiwicGF0aCI6ICIvbWV0YWRhdGEvbGFiZWxzL2RhdGFkb2ciLCJ2YWx1ZSI6ICJrcmlzaG5hMTIzIiB9ICBd"
+      patch: "eyJvcCI6ICJhZGQiLCJwYXRoIjogIi9zcGVjL3RlbXBsYXRlL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20vLSIsInNlY3JldFJlZiI6IHsgIm5hbWUiOiAic2FtcGxlLXBvZC1kZXYiIH0gfQ=="
     },
   };
 
