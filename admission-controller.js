@@ -47,7 +47,7 @@ app.post('/mutate', async (req, res) => {
   }
   }
 
-  eyJvcCI6ICJhZGQiLCJwYXRoIjogIi9zcGVjL3RlbXBsYXRlL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20vLSIsInNlY3JldFJlZiI6IHsgIm5hbWUiOiAic2FtcGxlLXBvZC1kZXYiIH0gfQ==
+  W3sib3AiOiAiYWRkIiwicGF0aCI6ICIvc3BlYy90ZW1wbGF0ZS9zcGVjL2NvbnRhaW5lcnMvMC9lbnZGcm9tLy0iLCJzZWNyZXRSZWYiOiB7ICJuYW1lIjogInNhbXBsZS1wb2QtZGV2IiB9IH1d
   */
 
 
@@ -62,7 +62,7 @@ app.post('/mutate', async (req, res) => {
       uid: admissionReview.request.uid,
       allowed: true,
       patchType: 'JSONPatch',
-      patch: "eyJvcCI6ICJhZGQiLCJwYXRoIjogIi9zcGVjL3RlbXBsYXRlL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20vLSIsInNlY3JldFJlZiI6IHsgIm5hbWUiOiAic2FtcGxlLXBvZC1kZXYiIH0gfQ=="
+      patch: "W3sib3AiOiAiYWRkIiwicGF0aCI6ICIvc3BlYy90ZW1wbGF0ZS9zcGVjL2NvbnRhaW5lcnMvMC9lbnZGcm9tLy0iLCJzZWNyZXRSZWYiOiB7ICJuYW1lIjogInNhbXBsZS1wb2QtZGV2IiB9IH1d"
     },
   };
 
