@@ -50,6 +50,47 @@ app.post('/mutate', async (req, res) => {
   W3sib3AiOiAiYWRkIiwicGF0aCI6ICIvc3BlYy90ZW1wbGF0ZS9zcGVjL2NvbnRhaW5lcnMvMC9lbnZGcm9tLy0iLCJzZWNyZXRSZWYiOiB7ICJuYW1lIjogInNhbXBsZS1wb2QtZGV2IiB9IH1d
   */
 
+//failed
+
+  [
+    {
+      "op": "add",
+      "path": "/spec/template/spec/containers/0/envFrom/0/secretRef",
+      "value": {
+        "name": "sample-pod-dev"
+      }
+    }
+  ]
+
+
+
+  /*[
+    {
+      "op": "add",
+      "path": "/spec/template/spec/containers/0/envFrom/-",
+      "value": {
+        "secretRef": {
+          "name": "sample-pod-dev"
+        }
+      }
+    }
+  ]
+
+
+  [
+  {
+    "op": "add",
+    "path": "/spec//spec/containers/0/envFrom/0/secretRef",
+    "value": "sample-pod-dev"
+  }
+]
+
+
+  */
+
+
+
+
 
 
 
@@ -62,7 +103,7 @@ app.post('/mutate', async (req, res) => {
       uid: admissionReview.request.uid,
       allowed: true,
       patchType: 'JSONPatch',
-      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvdGVtcGxhdGUvc3BlYy9jb250YWluZXJzLzAvZW52RnJvbS8wL3NlY3JldFJlZiIsInZhbHVlIjp7Im5hbWUiOiJzYW1wbGUtcG9kLWRldiJ9fV0="
+      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvdGVtcGxhdGUvc3BlYy9jb250YWluZXJzLzAvZW52RnJvbS8tIiwidmFsdWUiOnsic2VjcmV0UmVmIjp7Im5hbWUiOiJzYW1wbGUtcG9kLWRldiJ9fX1d"
     },
   };
 
