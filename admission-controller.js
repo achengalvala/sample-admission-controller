@@ -62,7 +62,7 @@ app.post('/mutate', async (req, res) => {
       uid: admissionReview.request.uid,
       allowed: true,
       patchType: 'JSONPatch',
-      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvdGVtcGxhdGUvc3BlYy9jb250YWluZXJzLzAvZW52RnJvbS8tIiwidmFsdWUiOnsic2VjcmV0UmVmIjp7Im5hbWUiOiJzYW1wbGUtcG9kLWRldiJ9fX1d"
+      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvdGVtcGxhdGUvc3BlYy9jb250YWluZXJzLzAvZW52RnJvbS8wL3NlY3JldFJlZiIsInZhbHVlIjp7Im5hbWUiOiJzYW1wbGUtcG9kLWRldiJ9fV0"
     },
   };
 
