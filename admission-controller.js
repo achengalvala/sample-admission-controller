@@ -40,13 +40,7 @@ app.post('/mutate', async (req, res) => {
       uid: admissionReview.request.uid,
       allowed: true,
       patchType: 'JSONPatch',
-      patch: [
-        {
-          "op": "add",
-          "path": "/metadata/labels/new-label",
-          "value": "value"
-        }
-      ]
+      patch: "W3sib3AiOiAiYWRkIiwicGF0aCI6ICIvbWV0YWRhdGEvbGFiZWxzL2RhdGFkb2ciLCJ2YWx1ZSI6ICJrcmlzaG5hMTIzIiB9ICBd"
     },
   };
 
