@@ -120,7 +120,7 @@ https://json-patch-builder-online.github.io/
       uid: admissionReview.request.uid,
       allowed: true,
       patchType: 'JSONPatch',
-      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20iLCJ2YWx1ZSI6W3sic2VjcmV0UmVmIjp7Im5hbWUiOiJzYW1wbGUtcG9kLWRldiJ9fV19XQ"
+      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20iLCJ2YWx1ZSI6W3sic2VjcmV0UmVmIjp7Im5hbWUiOiJzYW1wbGUtcG9kLWRldiJ9fV19XQ=="
     },
   };
 
