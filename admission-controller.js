@@ -85,6 +85,23 @@ app.post('/mutate', async (req, res) => {
   }
 ]
 
+https://json-patch-builder-online.github.io/
+
+
+[
+    {
+        "op": "add",
+        "path": "/spec/containers/0/envFrom",
+        "value": [
+            {
+                "secretRef": {
+                    "name": "sample-pod-dev"
+                }
+            }
+        ]
+    }
+]
+
 
   */
 
@@ -103,7 +120,7 @@ app.post('/mutate', async (req, res) => {
       uid: admissionReview.request.uid,
       allowed: true,
       patchType: 'JSONPatch',
-      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20vMC9zZWNyZXRSZWYiLCJ2YWx1ZSI6InNhbXBsZS1wb2QtZGV2In1d"
+      patch: "W3sib3AiOiJhZGQiLCJwYXRoIjoiL3NwZWMvY29udGFpbmVycy8wL2VudkZyb20iLCJ2YWx1ZSI6W3sic2VjcmV0UmVmIjp7Im5hbWUiOiJzYW1wbGUtcG9kLWRldiJ9fV19XQ"
     },
   };
 
